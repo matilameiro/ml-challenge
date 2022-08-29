@@ -1,0 +1,58 @@
+.header {
+  background-color: #ffe600;
+  padding: 0.8rem 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  box-shadow: 0 1px 0 0rgba (0, 0, 0, 0.1);
+
+  &__logo {
+    background-image: url("../../../Assets/Logo_ML.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 28px;
+    overflow: hidden;
+    text-indent: -999px;
+    width: 41px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / span 10;
+
+    &__form {
+      flex: 1;
+      display: flex;
+
+      input {
+        padding: 0 8px;
+        width: 100%;
+        font-size: 18px;
+        box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+        height: 40px;
+        border-radius: 2px;
+        outline: none !important;
+        border: none;
+
+        &:focus {
+          outline: none !important;
+        }
+      }
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0.7rem;
+        height: 40px !important;
+        box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+        cursor: pointer;
+        border: none;
+      }
+    }
+  }
+}

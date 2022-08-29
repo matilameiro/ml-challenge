@@ -1,0 +1,12 @@
+.main {
+  min-height: calc(100vh - 66px);
+  background: #EEEEEE;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  padding: 1rem 0;
+
+  &__container {
+    grid-column: 2 / span 10;
+  }
+}

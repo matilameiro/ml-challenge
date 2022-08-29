@@ -1,0 +1,42 @@
+.productItem {
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
+
+  &__img_container {
+    margin: 16px;
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 4px;
+    }
+  }
+
+  &__description {
+    margin: 32px 128px 16px 0;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 32px;
+
+      &__price {
+        font-size: 24px;
+        margin-right: 0.5rem;
+      }
+
+      &__address {
+        font-size: 12px;
+      }
+    }
+
+    &__title {
+      span {
+        font-size: 18px;
+      }
+    }
+  }
+}
