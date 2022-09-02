@@ -3,10 +3,11 @@ export interface ProductDetail {
   id: string;
   pictures: Array<Picture>;
   price: number;
-  status: 'active' | 'inactive';
+  status: "active" | "inactive";
   title: string;
-  condition: 'new' | 'used',
-  sold_quantity: number
+  condition: "new" | "used";
+  sold_quantity: number;
+  category_id: string;
 }
 
 export interface Picture {
@@ -14,5 +15,5 @@ export interface Picture {
   url: string;
   secure_url: string;
   size: string;
-  max_size: string
+  max_size: string;
 }

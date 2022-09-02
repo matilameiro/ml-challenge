@@ -1,12 +1,23 @@
+@import "./Styles/mixins";
+
 .main {
   min-height: calc(100vh - 66px);
-  background: #EEEEEE;
+  background: #eeeeee;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 30px;
-  padding: 1rem 0;
+  padding-top: 16px;
 
   &__container {
     grid-column: 2 / span 10;
+
+    @include responsive(tablet) {
+      grid-column: span 12;
+      padding: 0;
+    }
+
+    @include responsive(celular) {
+      grid-column: span 12;
+      padding: 0;
+    }
   }
 }

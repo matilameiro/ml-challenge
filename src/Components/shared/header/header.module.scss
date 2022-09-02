@@ -1,10 +1,13 @@
+@import "../../../Styles/variables";
+@import "../../../Styles/mixins";
+
 .header {
-  background-color: #ffe600;
-  padding: 0.8rem 0;
+  background-color: $primary-color;
+  padding: 1rem 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
-  box-shadow: 0 1px 0 0rgba (0, 0, 0, 0.1);
+  box-shadow: $shadow;
 
   &__logo {
     background-image: url("../../../Assets/Logo_ML.png");
@@ -53,6 +56,14 @@
         cursor: pointer;
         border: none;
       }
+    }
+
+    @include responsive(tablet) {
+      gap: 16px;
+    }
+
+    @include responsive(celular) {
+      gap: 8px;
     }
   }
 }

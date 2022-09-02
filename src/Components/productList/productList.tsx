@@ -16,11 +16,11 @@ const ProductList = ({ products }: Props) => {
 
   return (
     <>
-      {products.map((product: Product) => {
+      {products.map((product: Product, index) => {
         return (
-          <div key={product.id} style={{ backgroundColor: "white" }}>
+          <div key={product.id} className={styles.productItem}>
             <ProductItem item={product} onClick={handleOnClick}></ProductItem>
-            <hr className={styles.line} />
+            {index !== products.length - 1 && <hr className={styles.line} />}
           </div>
         );
       })}

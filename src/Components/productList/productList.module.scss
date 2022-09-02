@@ -1,9 +1,15 @@
+@import "../../Styles/variables";
+
+.productItem {
+  background-color: $white-color;
+}
+
 .line {
-  width: 95%;
+  width: 90%;
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid $light-grey-color;
   margin: 0 auto;
   padding: 0;
 }
