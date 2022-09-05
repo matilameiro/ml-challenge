@@ -9,7 +9,7 @@ export const getSearch = async (search: string) => {
     );
     return data;
   } catch (error) {
-    throw new Error("Error al conseguir los canales.");
+    throw new Error("Error al conseguir la busqueda.");
   }
 };
 
@@ -18,7 +18,7 @@ export const getDetail = async (id: string) => {
     const { data } = await mlInstance.get<ProductDetail>(`/items/${id}`);
     return data;
   } catch (error) {
-    throw new Error("Error al conseguir los canales.");
+    throw new Error("Error al conseguir el detalle.");
   }
 };
 
@@ -29,6 +29,6 @@ export const getDescription = async (id: string) => {
     );
     return data;
   } catch (error) {
-    throw new Error("Error al conseguir los canales.");
+    throw new Error("Error al conseguir la descripción.");
   }
 };

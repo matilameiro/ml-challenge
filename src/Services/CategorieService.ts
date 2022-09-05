@@ -5,6 +5,6 @@ export const getPathFromRoot = async (id: string) => {
     const { data } = await mlInstance.get(`categories/${id}`);
     return data.path_from_root;
   } catch (error) {
-    throw new Error("Error al conseguir los canales.");
+    throw new Error("Error al conseguir las categirias.");
   }
 };
