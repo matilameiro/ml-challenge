@@ -61,6 +61,7 @@ export const Detail = () => {
       <div className={styles.detail}>
         <div className={styles.detail__resume}>
           <div className={styles.detail__resume__img_container}>
+            {/* TODO: Buscar la imagen por propiedad y tamaño necesario. */}
             <img src={detail?.pictures[0].url} alt="imagen producto" />
           </div>
           <div className={styles.detail__resume__title_and_price}>

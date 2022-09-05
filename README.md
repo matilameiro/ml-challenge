@@ -1,3 +1,27 @@
+# **Instalar paquetes**
+### Por consola ejecutar `yarn install`
+
+# **Archivos de entorno**
+## Crear archivo .env en la raiz del proyecto con la variable:
+PUBLIC_URL=""
+REACT_APP_API_ENDPOINT="https://api.mercadolibre.com"
+
+## Crear archivo .env.production.local en la raiz del proyecto con la variable:
+PUBLIC_URL="/ml-challenge"
+REACT_APP_API_ENDPOINT="https://api.mercadolibre.com"
+
+# Mejoras pendientes
+- Mejorar imagenes
+  - En listado mejorar calidad de imagenes.
+  - En detalle determinar imagen segun tamaño de pantalla.
+- Mejorar Tipado en varios puntos de la aplicación como por ejemplo en Listado de productos o en servicios.
+- Manejo del git:
+  - Commits más chicos y mas especificos.
+  - Crear branchs para cada tarea.
+- Buscar categoria por propiedad.
+- Resolver TODOs.
+- Realizar test unitarios, de integración y e2e.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -28,19 +52,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

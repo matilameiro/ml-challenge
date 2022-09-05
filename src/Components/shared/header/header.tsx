@@ -21,7 +21,11 @@ export const Header = () => {
     <div className={style.header}>
       <div className={style.header__container}>
         <div>
-          <a className={style.header__logo} href="/" tabIndex={2}>
+          <a
+            className={style.header__logo}
+            href={process.env.PUBLIC_URL + "/"}
+            tabIndex={2}
+          >
             Mercado Libre Argentina - Donde comprar y vender de todo
           </a>
         </div>
